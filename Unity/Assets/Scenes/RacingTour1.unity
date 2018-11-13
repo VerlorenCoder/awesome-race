@@ -536,7 +536,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: 1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -551,6 +551,25 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &824559912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: 8eeb8fa494ef8754d8caa93643fb400e,
+    type: 3}
+  m_PrefabInternal: {fileID: 355847388}
+--- !u!114 &824559913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 824559912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3189647e393adb245a673961d80a1789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Car: {fileID: 0}
+  Wheels: {fileID: 0}
+  CarController: {fileID: 969227484}
 --- !u!1001 &829182617
 Prefab:
   m_ObjectHideFlags: 0
@@ -629,6 +648,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8de7b345734c64d4e8994070b4af0072, type: 3}
   m_IsPrefabAsset: 0
+--- !u!114 &969227484 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 39433895}
+  m_Script: {fileID: 11500000, guid: 3ea65b38d485c374caa584a03f1de571, type: 3}
 --- !u!1 &1029706263
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,7 +666,7 @@ GameObject:
   - component: {fileID: 1029706265}
   m_Layer: 0
   m_Name: SideCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -653,7 +678,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1029706263}
   m_LocalRotation: {x: 0.105725385, y: 0.26620957, z: -0.029389806, w: 0.95764863}
-  m_LocalPosition: {x: -5.25, y: 3.56, z: -8.75}
+  m_LocalPosition: {x: -3.29, y: 2.76, z: -5.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 39433896}
@@ -691,7 +716,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
