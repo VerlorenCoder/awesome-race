@@ -7,7 +7,7 @@ public class RotateWheels : MonoBehaviour
 {
 
     public CarController CarController;
-    public float RotationFactor = 0.3f;
+    public float RotationFactor = 1f;
 
     // Update is called once per frame
     void Update()
