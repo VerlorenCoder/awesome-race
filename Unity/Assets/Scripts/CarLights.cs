@@ -13,8 +13,8 @@ public class CarLights : MonoBehaviour {
     void turnLightsOn()
     {
         lightsOn = true;
-        spotLightLeft.intensity = 4f;
-        spotLightRight.intensity = 4f;
+        spotLightLeft.intensity = 2f;
+        spotLightRight.intensity = 2f;
     }
 
     void turnLightsOff()
