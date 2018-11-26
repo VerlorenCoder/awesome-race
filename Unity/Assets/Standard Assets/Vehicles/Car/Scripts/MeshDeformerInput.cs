@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
 
 public class MeshDeformerInput : MonoBehaviour {
-    public float force = 10f;
-    public float forceOffset = 0.1f;
-
     void Update() {
         if (Input.GetMouseButton(0)) {
             HandleInput();
@@ -18,7 +15,7 @@ public class MeshDeformerInput : MonoBehaviour {
             MeshDeformer deformer = hit.collider.GetComponent<MeshDeformer>();
 
             if (deformer) {
-                deformer.AddDeformingForce(hit.point);
+                deformer.AddDeformingForce();
             }
         }
     }

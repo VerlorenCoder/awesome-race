@@ -85,10 +85,13 @@ namespace UnityStandardAssets.Vehicles.Car
 
         void OnCollisionEnter(Collision collision)
         {
-           // print(collision.gameObject.name);
-           // if(collision.gameObject.name == "Terrain")
-           // {
-               m_carCrash.Play();
+
+            FindObjectOfType<MeshDeformer>().Crash();
+            //backWindow.crash();
+            // print(collision.gameObject.name);
+            // if(collision.gameObject.name == "Terrain")
+            // {
+            m_carCrash.Play();
            // }
            
         }
