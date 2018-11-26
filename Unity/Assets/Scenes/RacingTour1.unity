@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427147, b: 0.56452364, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -421,6 +421,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CarController: {fileID: 1193646121}
   RotationFactor: 1.1
+--- !u!1 &336425584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 02a9192f349f66c468be6e0e1f5cb9b7,
+    type: 3}
+  m_PrefabInternal: {fileID: 370937883}
+--- !u!114 &336425588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 336425584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7593d15c5aaed7b40916fe2004cf8edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!64 &336425589
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 336425584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300008, guid: 02a9192f349f66c468be6e0e1f5cb9b7, type: 3}
 --- !u!1001 &370937883
 Prefab:
   m_ObjectHideFlags: 0
@@ -504,6 +534,14 @@ Prefab:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: f710febf55d85344996296a0b0566823, type: 2}
+    - target: {fileID: 400012, guid: 02a9192f349f66c468be6e0e1f5cb9b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.790792
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02a9192f349f66c468be6e0e1f5cb9b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.847744
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02a9192f349f66c468be6e0e1f5cb9b7, type: 3}
   m_IsPrefabAsset: 0
@@ -688,7 +726,7 @@ GameObject:
   - component: {fileID: 773887031}
   m_Layer: 0
   m_Name: BackCamera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -763,6 +801,7 @@ GameObject:
   - component: {fileID: 1029706264}
   - component: {fileID: 1029706266}
   - component: {fileID: 1029706265}
+  - component: {fileID: 1029706267}
   m_Layer: 0
   m_Name: SideCamera
   m_TagString: MainCamera
@@ -830,6 +869,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1029706267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1029706263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06813f670fecc6d429a7dc3d38793963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 100
+  forceOffset: 0.1
 --- !u!114 &1193646121 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
