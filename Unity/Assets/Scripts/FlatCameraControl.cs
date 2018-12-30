@@ -1,25 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Vehicles.Car;
 
-public class FlatCameraControl : MonoBehaviour {
+public class FlatCameraControl : MonoBehaviour
+{
+    public GameObject Car;
 
-    public int InitialHeight = 25, MinHeight = 10, MaxHeight = 200;
-    public float ZoomFactor = 0.5f;
+    public int MinHeight = 10, MaxHeight = 200;
+    public float ZoomFactor = 0.5f, CameraHeight = 25;
 
-    private void Start()
+    void Update()
     {
-        transform.position = new Vector3(transform.localPosition.x, InitialHeight, transform.localPosition.z);       
-    }
-    void Update () {
-        var currentHeight = transform.localPosition.y;
-        if (Input.GetKey(KeyCode.Z) && currentHeight > MinHeight)
+        var carPosition = Car.transform.position;
+        var carEulerAngles = Car.transform.eulerAngles;
+
+        if (Input.GetKey(KeyCode.Z) && CameraHeight > MinHeight)
         {
-            transform.position += Vector3.down * ZoomFactor;
+            CameraHeight -= ZoomFactor;
         }
-        if (Input.GetKey(KeyCode.X) && currentHeight < MaxHeight)
+        if (Input.GetKey(KeyCode.X) && CameraHeight < MaxHeight)
         {
-            transform.position += Vector3.up * ZoomFactor;
+            CameraHeight += ZoomFactor;
         }
+
+        transform.position = new Vector3(carPosition.x, carPosition.y + CameraHeight, carPosition.z);
+        transform.eulerAngles = new Vector3(90, carEulerAngles.y, carEulerAngles.z);
     }
 }
