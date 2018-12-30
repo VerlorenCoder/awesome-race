@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class FlatCameraControl : MonoBehaviour {
 
-	void Update () {
-        if (Input.GetKey(KeyCode.N))
+    public int InitialHeight = 25, MinHeight = 10, MaxHeight = 200;
+    public float ZoomFactor = 0.5f;
+
+    private void Start()
+    {
+        transform.position = new Vector3(transform.localPosition.x, InitialHeight, transform.localPosition.z);       
+    }
+    void Update () {
+        var currentHeight = transform.localPosition.y;
+        if (Input.GetKey(KeyCode.Z) && currentHeight > MinHeight)
         {
-            transform.localPosition += Vector3.down * 0.2f;
+            transform.position += Vector3.down * ZoomFactor;
         }
-        if (Input.GetKey(KeyCode.M))
+        if (Input.GetKey(KeyCode.X) && currentHeight < MaxHeight)
         {
-            transform.localPosition += Vector3.up * 0.2f;
+            transform.position += Vector3.up * ZoomFactor;
         }
     }
 }
