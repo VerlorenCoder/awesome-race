@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 02a9192f349f66c468be6e0e1f5cb9b7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BackGlassMirr
+    100002: BackMirror
+    100004: backwheels
+    100006: //RootNode
+    100008: FUEL
+    100010: Ground
+    100012: Hood
+    100014: LeftBackBumper
+    100016: LeftDoor
+    100018: LeftFrBumper
+    100020: LeftMirror
+    100022: leftmirror
+    100024: leftstick
+    100026: leftWheel
+    100028: Radiator
+    100030: RightMirror
+    100032: rightmirror
+    100034: rightstick
+    100036: rightWheel
+    100038: Roof
+    100040: UKLAD
+    100042: Windshield
+    400000: BackGlassMirr
+    400002: BackMirror
+    400004: backwheels
+    400006: //RootNode
+    400008: FUEL
+    400010: Ground
+    400012: Hood
+    400014: LeftBackBumper
+    400016: LeftDoor
+    400018: LeftFrBumper
+    400020: LeftMirror
+    400022: leftmirror
+    400024: leftstick
+    400026: leftWheel
+    400028: Radiator
+    400030: RightMirror
+    400032: rightmirror
+    400034: rightstick
+    400036: rightWheel
+    400038: Roof
+    400040: UKLAD
+    400042: Windshield
+    2100000: "\u043F\u043E\u043A\u0440\u044B\u0448\u043A\u0430"
+    2100002: Material_017
+    2100004: "\u0434\u0438\u0441\u043A"
+    2100006: Material_016
+    2100008: unnamed
+    2100010: Material_006
+    2100012: Material_005
+    2100014: Material_011
+    2100016: Material_014
+    2100018: Material_012
+    2100020: Material_007
+    2100022: Material_010
+    2100024: Material_008
+    2100026: Material_013
+    2100028: Material_004
+    2100030: Material
+    2100032: Material_015
+    2100034: Material_002
+    2100036: Material_001
+    2100038: Material_009
+    2100040: Material_003
+    2300000: BackGlassMirr
+    2300002: BackMirror
+    2300004: backwheels
+    2300006: FUEL
+    2300008: Ground
+    2300010: Hood
+    2300012: LeftBackBumper
+    2300014: LeftDoor
+    2300016: LeftFrBumper
+    2300018: LeftMirror
+    2300020: leftmirror
+    2300022: leftstick
+    2300024: leftWheel
+    2300026: Radiator
+    2300028: RightMirror
+    2300030: rightmirror
+    2300032: rightstick
+    2300034: rightWheel
+    2300036: Roof
+    2300038: UKLAD
+    2300040: Windshield
+    3300000: BackGlassMirr
+    3300002: BackMirror
+    3300004: backwheels
+    3300006: FUEL
+    3300008: Ground
+    3300010: Hood
+    3300012: LeftBackBumper
+    3300014: LeftDoor
+    3300016: LeftFrBumper
+    3300018: LeftMirror
+    3300020: leftmirror
+    3300022: leftstick
+    3300024: leftWheel
+    3300026: Radiator
+    3300028: RightMirror
+    3300030: rightmirror
+    3300032: rightstick
+    3300034: rightWheel
+    3300036: Roof
+    3300038: UKLAD
+    3300040: Windshield
+    4300000: rightWheel
+    4300002: Radiator
+    4300004: UKLAD
+    4300006: FUEL
+    4300008: BackGlassMirr
+    4300010: Ground
+    4300012: BackMirror
+    4300014: LeftBackBumper
+    4300016: LeftMirror
+    4300018: LeftDoor
+    4300020: RightMirror
+    4300022: Roof
+    4300024: Windshield
+    4300026: rightstick
+    4300028: rightmirror
+    4300030: leftstick
+    4300032: leftmirror
+    4300034: backwheels
+    4300036: LeftFrBumper
+    4300038: Hood
+    4300040: leftWheel
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
