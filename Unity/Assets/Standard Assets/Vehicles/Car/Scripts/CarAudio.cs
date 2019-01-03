@@ -29,11 +29,15 @@ namespace UnityStandardAssets.Vehicles.Car
             FourChannel // four Channel audio
         }
 
+
         public EngineAudioOptions engineSoundStyle = EngineAudioOptions.FourChannel;// Set the default audio options to be four channel
+
         public AudioClip lowAccelClip;                                              // Audio clip for low acceleration
         public AudioClip lowDecelClip;                                              // Audio clip for low deceleration
         public AudioClip highAccelClip;                                             // Audio clip for high acceleration
         public AudioClip highDecelClip;                                             // Audio clip for high deceleration
+        public AudioClip carCrashClip;                                             // Audio clip for high deceleration
+
         public float pitchMultiplier = 1f;                                          // Used for altering the pitch of audio clips
         public float lowPitchMin = 1f;                                              // The lowest possible pitch for the low sounds
         public float lowPitchMax = 6f;                                              // The highest possible pitch for the low sounds
@@ -41,6 +45,14 @@ namespace UnityStandardAssets.Vehicles.Car
         public float maxRolloffDistance = 500;                                      // The maximum distance where rollof starts to take place
         public float dopplerLevel = 1;                                              // The mount of doppler effect used in the audio
         public bool useDoppler = true;                                              // Toggle for using doppler
+
+
+        public AudioSource m_driveOnRoad;                                               // Audio clip for car tires on road
+        public AudioSource m_tiresEnterTheGrass;                                        // Audio clip for car tires on grass
+        public AudioSource m_driveOnGrass;                                              // Audio clip for enter car tires on grass
+        public AudioSource m_carCrash;                                                  // Audio clip for car fatal crash
+        public AudioSource m_carHorn;                                                   // Audio clip for car sirene
+
 
         private AudioSource m_LowAccel; // Source for the low acceleration sounds
         private AudioSource m_LowDecel; // Source for the low deceleration sounds
@@ -57,6 +69,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
             // setup the simple audio source
             m_HighAccel = SetUpEngineAudioSource(highAccelClip);
+            m_carCrash= SetUpCarCrashAudioSrc(carCrashClip);
 
             // if we have four channel audio setup the four audio sources
             if (engineSoundStyle == EngineAudioOptions.FourChannel)
@@ -70,6 +83,19 @@ namespace UnityStandardAssets.Vehicles.Car
             m_StartedSound = true;
         }
 
+        void OnCollisionEnter(Collision collision)
+        {
+
+            FindObjectOfType<MeshDeformer>().Crash();
+            //backWindow.crash();
+            // print(collision.gameObject.name);
+            // if(collision.gameObject.name == "Terrain")
+            // {
+            m_carCrash.Play();
+           // }
+           
+        }
+   
 
         private void StopSound()
         {
@@ -173,7 +199,23 @@ namespace UnityStandardAssets.Vehicles.Car
             source.dopplerLevel = 0;
             return source;
         }
+        // sets up and adds new audio source to the gane object
+        private AudioSource SetUpCarCrashAudioSrc(AudioClip clip)
+        {
+            // create the new audio source component on the game object and set up its properties
+            AudioSource source = gameObject.AddComponent<AudioSource>();
+            source.clip = clip;
+            source.volume = 1;
+            source.loop = false;
+            source.playOnAwake = false;
 
+            // start the clip from a random point
+            source.time = Random.Range(0f, clip.length);
+
+            source.priority = 130;
+            source.dopplerLevel = 0;
+            return source;
+        }
 
         // unclamped versions of Lerp and Inverse Lerp, to allow value to exceed the from-to range
         private static float ULerp(float from, float to, float value)
