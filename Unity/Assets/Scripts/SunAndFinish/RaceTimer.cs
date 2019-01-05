@@ -13,7 +13,7 @@ public class RaceTimer : MonoBehaviour
     void Start()
     {
         startTime= Time.time;
-        timerText.text = "0.0" + ":" + 0;
+        timerText.text = "0:" + "0.0";
     }
     // Update is called once per frame
     void Update()
