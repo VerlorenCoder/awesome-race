@@ -13,7 +13,7 @@ public class RaceTimer : MonoBehaviour
     void Start()
     {
         startTime= Time.time;
-        timerText.text = "0:" + "0.0";
+        timerText.text = "00:" + "00.0";
     }
     // Update is called once per frame
     void Update()
@@ -28,8 +28,8 @@ public class RaceTimer : MonoBehaviour
             }
 
             t = Time.time - startTime;
-            string  minutes = ((int)t / 60).ToString();
-            string  seconds = (t % 60).ToString("f1");
+            string  minutes = ((int)t / 60).ToString("d2");
+            string  seconds = (t % 60).ToString("00.0");
             timerText.text = minutes + ":" + seconds;
         }
        

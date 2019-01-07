@@ -11,7 +11,6 @@ public class Speedometer : MonoBehaviour {
 
     private void Awake()
     {
-        SpeedText.alignment = TextAnchor.MiddleRight;
         Car = GetComponent<CarController>();
     }
 

@@ -26,7 +26,7 @@ public class MoveToStartPosition : MonoBehaviour
                 GameObject.Find("Car").transform.position = startPos;
                 GameObject.Find("Car").transform.rotation = rotation;
                 timerText.color = Color.white;
-                timerText.text = "0:0.0";
+                timerText.text = "00:00.0";
                 GameObject.Find("Car").SendMessage("TimeStop");
             }
           
