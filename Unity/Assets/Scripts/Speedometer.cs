@@ -24,7 +24,7 @@ public class Speedometer : MonoBehaviour {
 
     void DisplayCurrentSpeed()
     {
-        var speed = (int) Mathf.Ceil(Car.CurrentSpeed);
+        var speed = (int) Mathf.Floor(Car.CurrentSpeed * 1.3f);
         var text = speed + " km/h";
         SpeedText.text = text;
     }
