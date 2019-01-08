@@ -238,7 +238,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.23
+      value: 1.33
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -411,6 +411,22 @@ Prefab:
     - target: {fileID: 100022, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 400020, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 400044, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 400042, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.92
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
@@ -3067,7 +3083,7 @@ BoxCollider:
   m_GameObject: {fileID: 533091164}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3391,15 +3407,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4081600431394990, guid: 2e6fa2acfe19bd54d9d654da53dec913, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.31599998
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 4081600431394990, guid: 2e6fa2acfe19bd54d9d654da53dec913, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.97
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 4081600431394990, guid: 2e6fa2acfe19bd54d9d654da53dec913, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -17.100006
+      value: -16.33
       objectReference: {fileID: 0}
     - target: {fileID: 4081600431394990, guid: 2e6fa2acfe19bd54d9d654da53dec913, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3542,15 +3558,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4081600431394990, guid: 2e6fa2acfe19bd54d9d654da53dec913, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.6
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 4081600431394990, guid: 2e6fa2acfe19bd54d9d654da53dec913, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.6
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 4081600431394990, guid: 2e6fa2acfe19bd54d9d654da53dec913, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.6
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 1088188112816422, guid: 2e6fa2acfe19bd54d9d654da53dec913, type: 2}
       propertyPath: m_IsActive
@@ -4433,13 +4449,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 805578930}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.03489949, y: 0, z: 0, w: 0.99939084}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1854233580}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 4, y: 0, z: 0}
 --- !u!81 &805578932
 AudioListener:
   m_ObjectHideFlags: 0
@@ -10259,7 +10275,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1854233579}
   m_LocalRotation: {x: 0.20176172, y: 0, z: 0, w: 0.97943467}
-  m_LocalPosition: {x: 0, y: 1.95, z: 0.65}
+  m_LocalPosition: {x: 0, y: 1.7, z: 0.65}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 805578931}
@@ -10289,7 +10305,7 @@ BoxCollider:
   m_GameObject: {fileID: 1854233579}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
