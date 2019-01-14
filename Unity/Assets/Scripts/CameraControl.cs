@@ -26,9 +26,16 @@ public class CameraControl : MonoBehaviour {
                 if (index == CurrentCameraIndex)
                 {
                     c.depth = 999;
-                } else
+                    c.enabled = true;
+                    // activate parent CameraHolder object
+                    c.transform.parent.gameObject.SetActive(true);
+                }
+                else
                 {
                     c.depth = 0;
+                    c.enabled = false;
+                    // deactivate parent CameraHolder object
+                    c.transform.parent.gameObject.SetActive(false);
                 }
             });
         }
