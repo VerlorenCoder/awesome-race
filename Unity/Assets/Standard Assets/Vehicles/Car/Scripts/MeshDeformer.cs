@@ -5,6 +5,10 @@ public class MeshDeformer : MonoBehaviour {
     Mesh deformingMesh;
     Vector3[] originalVertices;
     float strength = 0.01f;
+    private GameObject smoke;
+    private GameObject smokeBack;
+    private int crashes = 0;
+    private bool isOnFire = false;
 
     public void Crash() {
         AddDeformingForce();
@@ -13,12 +17,28 @@ public class MeshDeformer : MonoBehaviour {
     void Start() {
         deformingMesh = GetComponent<MeshFilter>().mesh;
         originalVertices = deformingMesh.vertices;
+        smoke = GameObject.Find("WhiteSmoke");
+        smoke.GetComponent<ParticleSystem>().enableEmission = false;
+        smokeBack = GameObject.Find("WhiteSmoke2");
+        smokeBack.GetComponent<ParticleSystem>().enableEmission = false;
     }
 
     public void AddDeformingForce() {
         Debug.Log("Bum!");
         for (int i = 0; i < originalVertices.Length; i++) {
             AddForceToVertex(i);
+        }
+
+        crashes++;
+
+        if(!isOnFire && crashes > 3) {
+            smoke.GetComponent<ParticleSystem>().enableEmission = true;
+            isOnFire = true;
+        }
+
+        if (isOnFire && crashes > 6)
+        {
+            smokeBack.GetComponent<ParticleSystem>().enableEmission = true;
         }
     }
 
