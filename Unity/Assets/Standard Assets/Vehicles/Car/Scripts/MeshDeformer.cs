@@ -24,7 +24,6 @@ public class MeshDeformer : MonoBehaviour {
     }
 
     public void AddDeformingForce() {
-        Debug.Log("Bum!");
         for (int i = 0; i < originalVertices.Length; i++) {
             AddForceToVertex(i);
         }
