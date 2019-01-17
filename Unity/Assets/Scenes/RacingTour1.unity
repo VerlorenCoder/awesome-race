@@ -1569,6 +1569,7 @@ GameObject:
   - component: {fileID: 309897507}
   - component: {fileID: 309897506}
   - component: {fileID: 309897505}
+  - component: {fileID: 309897508}
   m_Layer: 0
   m_Name: FreeCameraHolder
   m_TagString: Untagged
@@ -1588,7 +1589,7 @@ Transform:
   m_Children:
   - {fileID: 464268555}
   m_Father: {fileID: 39433896}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 12, y: 0, z: 0}
 --- !u!65 &309897505
 BoxCollider:
@@ -1644,6 +1645,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 309897503}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &309897508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309897503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570ab27b6f3f50b4cb4b8a49fa1b0e73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &316894097
 Prefab:
   m_ObjectHideFlags: 0
@@ -2326,6 +2338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cameras:
   - {fileID: 773887032}
+  - {fileID: 464268557}
   - {fileID: 805578933}
   - {fileID: 1578017758}
   CurrentCameraIndex: 0
