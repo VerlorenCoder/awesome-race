@@ -29,6 +29,7 @@ public class CameraControl : MonoBehaviour {
                     c.enabled = true;
                     // activate parent CameraHolder object
                     c.transform.parent.gameObject.SetActive(true);
+                    c.GetComponentInChildren<AudioListener>().enabled = true;
                 }
                 else
                 {
@@ -36,6 +37,7 @@ public class CameraControl : MonoBehaviour {
                     c.enabled = false;
                     // deactivate parent CameraHolder object
                     c.transform.parent.gameObject.SetActive(false);
+                    c.GetComponentInChildren<AudioListener>().enabled = false;
                 }
             });
         }
