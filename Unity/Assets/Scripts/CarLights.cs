@@ -11,9 +11,11 @@ public class CarLights : MonoBehaviour {
     // public Renderer ligths;
     // public Material brakeLightsON, brakeLightsOFF;
     public Light spotLightLeft, spotLightRight, brakeLightLeft, brakeLightRight;
+    public Light frontLightLeft, frontLightRight;
 
     public bool lightsOn = true;
     private bool brakeLightsOn = false;
+    private bool frontLightsOn = false;
 
     public float brakeLightsBaseIntensity = 40f, brakeLightsIntensityMultiplier = 80f;
 
@@ -50,21 +52,40 @@ public class CarLights : MonoBehaviour {
         brakeLightRight.intensity = 0;
     }
 
+    void turnFrontalLightsOff()
+    {
+        frontLightsOn = false;
+        frontLightLeft.intensity = 0;
+        frontLightRight.intensity = 0;
+    }
+
+    void turnFrontalLightsOn()
+    {
+        frontLightsOn = true;
+        frontLightLeft.intensity = 40f;
+        frontLightRight.intensity = 40f;
+    }
+
     private void Start()
     {
-        if (lightsOn)
-            turnHeadLightsOff();
-        else
-            turnHeadLightsOn();
+        frontLightLeft = GameObject.Find("FrontLightLeft").GetComponent<Light>();
+        frontLightRight = GameObject.Find("FrontLightRight").GetComponent<Light>();
+
+        if (lightsOn) turnHeadLightsOff();
+        else turnHeadLightsOn();
+
+        if (frontLightsOn) turnFrontalLightsOn();
+        else turnFrontalLightsOff();
     }
 
     void Update () {
 		if (Input.GetKeyDown("1"))
         {
-            if (lightsOn)
-                turnHeadLightsOff();
-            else
-                turnHeadLightsOn();
+            if (lightsOn) turnHeadLightsOff();
+            else turnHeadLightsOn();
+
+            if (frontLightsOn) turnFrontalLightsOff();
+            else turnFrontalLightsOn();
         }
   
         if (Car.BrakeInput > 0 || brakeLightsOn)
