@@ -59,7 +59,7 @@ public class CarLights : MonoBehaviour {
     }
 
     void Update () {
-		if (Input.GetKeyDown("1"))
+		if (Input.GetKeyDown("1") || Input.GetButtonDown("Submit"))
         {
             if (lightsOn)
                 turnHeadLightsOff();
