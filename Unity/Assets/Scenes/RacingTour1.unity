@@ -185,7 +185,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -3.68, z: 0}
 --- !u!1001 &15022473
 Prefab:
   m_ObjectHideFlags: 0
@@ -1265,7 +1265,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -2.9, z: 0}
 --- !u!4 &135616461 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4687969457847746, guid: 4d6c55c05811dc9479052b2bdd680e40,
@@ -2804,7 +2804,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -2.75, z: 0}
 --- !u!4 &415212921
 Transform:
   m_ObjectHideFlags: 0
@@ -4303,7 +4303,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -2.05, z: 0}
 --- !u!4 &565471170 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4396155716594692, guid: 8a913a0e832092c43b8fcae69e5077d7,
@@ -5186,7 +5186,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -2.74, z: 0}
 --- !u!1 &668985881
 GameObject:
   m_ObjectHideFlags: 0
@@ -7779,7 +7779,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -2.24, z: 0}
 --- !u!1001 &954286352
 Prefab:
   m_ObjectHideFlags: 0
@@ -7986,11 +7986,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4290965999326772, guid: 754d93052a2b0924aba247cdeec3187f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.1400003
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 4290965999326772, guid: 754d93052a2b0924aba247cdeec3187f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 142.4
+      value: 138.99
       objectReference: {fileID: 0}
     - target: {fileID: 4290965999326772, guid: 754d93052a2b0924aba247cdeec3187f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8018,7 +8018,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4290965999326772, guid: 754d93052a2b0924aba247cdeec3187f, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.4
+      value: 1.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754d93052a2b0924aba247cdeec3187f, type: 2}
@@ -8045,7 +8045,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -3.25, z: 0}
 --- !u!1 &979976396
 GameObject:
   m_ObjectHideFlags: 0
@@ -11099,7 +11099,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -2.17, z: 0}
 --- !u!1001 &1350206114
 Prefab:
   m_ObjectHideFlags: 0
@@ -12510,7 +12510,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -2.34, z: 0}
 --- !u!1 &1528498454
 GameObject:
   m_ObjectHideFlags: 0
@@ -13015,7 +13015,7 @@ CapsuleCollider:
   m_Radius: 1.13
   m_Height: 6.66
   m_Direction: 1
-  m_Center: {x: 0, y: -1.12, z: 0}
+  m_Center: {x: 0, y: -1.48, z: 0}
 --- !u!1 &1581951794
 GameObject:
   m_ObjectHideFlags: 0
@@ -14336,7 +14336,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4290965999326772, guid: 754d93052a2b0924aba247cdeec3187f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.1400003
+      value: 4.13
       objectReference: {fileID: 0}
     - target: {fileID: 4290965999326772, guid: 754d93052a2b0924aba247cdeec3187f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -14395,7 +14395,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -3.66, z: 0}
 --- !u!4 &1786288189 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4734496904080434, guid: 38622539cb2657b4b87171b63d732b5d,
@@ -15462,7 +15462,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -2.26, z: 0}
 --- !u!4 &1964779871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4734496904080434, guid: 38622539cb2657b4b87171b63d732b5d,
@@ -16096,7 +16096,7 @@ CapsuleCollider:
   m_Radius: 1.22
   m_Height: 9.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -3.21, z: 0}
 --- !u!1 &2041070936
 GameObject:
   m_ObjectHideFlags: 0
