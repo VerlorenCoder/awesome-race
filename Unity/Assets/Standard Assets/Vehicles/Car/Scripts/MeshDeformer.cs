@@ -43,7 +43,7 @@ public class MeshDeformer : MonoBehaviour {
 
     void AddForceToVertex(int i) {
         if(Random.Range(0, 30) == 0) {
-            Vector3 random = new Vector3(Random.Range(0, strength), Random.Range(0, strength), Random.Range(0, strength));
+            Vector3 random = new Vector3(Random.Range(0, strength), -Random.Range(0, strength), -Random.Range(0, strength));
             originalVertices[i] = originalVertices[i] + random;
         }
     }
