@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.43668365, g: 0.48428017, b: 0.5645324, a: 1}
+  m_IndirectSpecularColor: {r: 0.43668345, g: 0.4842795, b: 0.5645297, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -449,6 +449,10 @@ Prefab:
       propertyPath: m_Name
       value: HeadLightRightSpot
       objectReference: {fileID: 0}
+    - target: {fileID: 11400024, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+      propertyPath: duckHitClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 718057707bf5ccd45a34852b9665e8d3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
   m_IsPrefabAsset: 0
@@ -1209,7 +1213,7 @@ GameObject:
   - component: {fileID: 185794231}
   - component: {fileID: 185794230}
   m_Layer: 0
-  m_Name: 12248_Bird_v1 (1)
+  m_Name: duck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2488,6 +2492,10 @@ Prefab:
     - target: {fileID: 400002, guid: 27f4108ff247c1d448b891349bd094f0, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.049999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 27f4108ff247c1d448b891349bd094f0, type: 3}
+      propertyPath: m_Name
+      value: duck
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27f4108ff247c1d448b891349bd094f0, type: 3}
@@ -4890,6 +4898,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 27f4108ff247c1d448b891349bd094f0, type: 3}
+      propertyPath: m_Name
+      value: duck
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27f4108ff247c1d448b891349bd094f0, type: 3}
   m_IsPrefabAsset: 0
@@ -6078,6 +6090,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.049999997
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 27f4108ff247c1d448b891349bd094f0, type: 3}
+      propertyPath: m_Name
+      value: duck
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27f4108ff247c1d448b891349bd094f0, type: 3}
   m_IsPrefabAsset: 0
@@ -6846,6 +6862,10 @@ Prefab:
     - target: {fileID: 400002, guid: 278bf7cdb93544e4ca92b97f7c840707, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 278bf7cdb93544e4ca92b97f7c840707, type: 3}
+      propertyPath: m_Name
+      value: duck
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 278bf7cdb93544e4ca92b97f7c840707, type: 3}
@@ -9288,7 +9308,7 @@ GameObject:
   - component: {fileID: 1317428988}
   - component: {fileID: 1317428987}
   m_Layer: 0
-  m_Name: 12248_Bird_v1 (2)
+  m_Name: duck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10937,6 +10957,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -15.03
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 278bf7cdb93544e4ca92b97f7c840707, type: 3}
+      propertyPath: m_Name
+      value: duck
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 278bf7cdb93544e4ca92b97f7c840707, type: 3}
   m_IsPrefabAsset: 0
@@ -11660,6 +11684,10 @@ Prefab:
     - target: {fileID: 400002, guid: 27f4108ff247c1d448b891349bd094f0, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.049999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 27f4108ff247c1d448b891349bd094f0, type: 3}
+      propertyPath: m_Name
+      value: duck
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27f4108ff247c1d448b891349bd094f0, type: 3}
