@@ -449,6 +449,10 @@ Prefab:
       propertyPath: m_Name
       value: HeadLightRightSpot
       objectReference: {fileID: 0}
+    - target: {fileID: 11400024, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+      propertyPath: duckHitClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 718057707bf5ccd45a34852b9665e8d3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
   m_IsPrefabAsset: 0
