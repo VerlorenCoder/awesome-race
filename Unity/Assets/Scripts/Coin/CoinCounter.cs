@@ -19,9 +19,9 @@ public class CoinCounter : MonoBehaviour {
       
 	}
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerExit(Collider other)
     {
-        if (other.name.Equals("Coin"))
+        if (other.name.Contains("Coin"))
         {
             Destroy(other.gameObject);
             counter += 50;
