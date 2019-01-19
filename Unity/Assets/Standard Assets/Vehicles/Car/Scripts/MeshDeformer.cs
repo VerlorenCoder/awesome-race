@@ -31,17 +31,17 @@ public class MeshDeformer : MonoBehaviour {
 
         crashes++;
 
-        if(!isOnFire && crashes > 3) {
+        if(!isOnFire && crashes > 8) {
             smoke.GetComponent<ParticleSystem>().enableEmission = true;
             isOnFire = true;
         }
 
-        if (isOnFire && crashes > 6)
+        if (isOnFire && crashes > 12)
         {
             smoke2.GetComponent<ParticleSystem>().enableEmission = true;
         }
 
-        if (isOnFire && crashes > 9)
+        if (isOnFire && crashes > 16)
         {
             smoke3.GetComponent<ParticleSystem>().enableEmission = true;
         }
