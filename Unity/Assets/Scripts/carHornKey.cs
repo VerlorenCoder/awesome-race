@@ -16,7 +16,7 @@ public class carHornKey : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H) || Input.GetButton("Fire2")) {
+        if (Input.GetKeyDown(KeyCode.H) || Input.GetButton("Fire1")) {
             {
                 carHorn.Play();
             }
