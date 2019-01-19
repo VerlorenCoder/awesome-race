@@ -90,8 +90,8 @@ namespace UnityStandardAssets.Vehicles.Car
         {
 
             FindObjectOfType<MeshDeformer>().Crash();
-
-            if (collision.gameObject.name.Equals("Duck"))
+    
+            if (collision.gameObject.name.Equals("duck"))
             {
                 duckHitSource.Play();
             }

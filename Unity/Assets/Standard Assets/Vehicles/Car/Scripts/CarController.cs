@@ -363,5 +363,10 @@ namespace UnityStandardAssets.Vehicles.Car
             }
             return false;
         }
+
+        private void OnControllerColliderHit(ControllerColliderHit hit)
+        {
+            print("dupa");
+        }
     }
 }
