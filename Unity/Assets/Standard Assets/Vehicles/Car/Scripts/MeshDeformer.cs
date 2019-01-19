@@ -1,19 +1,27 @@
 ﻿using UnityEngine;
+using UnityStandardAssets.Vehicles.Car;
 
 [RequireComponent(typeof(MeshFilter))]
 public class MeshDeformer : MonoBehaviour {
+    private CarController car;
     Mesh deformingMesh;
     Vector3[] originalVertices;
     float strength = 0.01f;
     private GameObject smoke, smoke2, smoke3;
     private int crashes = 0;
     private bool isOnFire = false;
+    public float deformationSpeed = 25.0f;
 
     public void Crash() {
-        AddDeformingForce();
+        float speed = (int)Mathf.Floor(car.CurrentSpeed * 1.3f);
+        if (speed >= deformationSpeed)
+        {
+            AddDeformingForce();
+        }
     }
 
     void Start() {
+        car = GameObject.Find("Car").GetComponent<CarController>();
         deformingMesh = GetComponent<MeshFilter>().mesh;
         originalVertices = deformingMesh.vertices;
         smoke = GameObject.Find("WhiteSmoke");

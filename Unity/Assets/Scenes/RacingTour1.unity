@@ -6314,6 +6314,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ae93d9ad0f250a24083962d71c193a4f, type: 2}
+    - target: {fileID: 114524681635742850, guid: 2e6fa2acfe19bd54d9d654da53dec913,
+        type: 2}
+      propertyPath: deformationSpeed
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e6fa2acfe19bd54d9d654da53dec913, type: 2}
   m_IsPrefabAsset: 0
