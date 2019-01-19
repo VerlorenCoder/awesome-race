@@ -15,11 +15,11 @@ public class FlatCameraControl : MonoBehaviour
         var carPosition = Car.transform.position;
         var carEulerAngles = Car.transform.eulerAngles;
 
-        if (Input.GetKey(KeyCode.Z) && CameraHeight > MinHeight)
+        if (Input.GetKey(KeyCode.O) && CameraHeight > MinHeight)
         {
             CameraHeight -= ZoomFactor;
         }
-        if (Input.GetKey(KeyCode.X) && CameraHeight < MaxHeight)
+        if (Input.GetKey(KeyCode.P) && CameraHeight < MaxHeight)
         {
             CameraHeight += ZoomFactor;
         }
