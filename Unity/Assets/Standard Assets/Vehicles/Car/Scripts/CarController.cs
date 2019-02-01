@@ -44,7 +44,7 @@ namespace UnityStandardAssets.Vehicles.Car
         private float m_GearFactor;
         private float m_OldRotation;
         private float m_CurrentTorque;
-        private Rigidbody m_Rigidbody;
+         Rigidbody m_Rigidbody;
         private const float k_ReversingThreshold = 0.01f;
 
         public bool Skidding { get; private set; }
@@ -174,7 +174,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
         private void CapSpeed()
         {
-            float speed = m_Rigidbody.velocity.magnitude;
+            float speed = m_Rigidbody.velocity.magnitude;                                                        
             switch (m_SpeedType)
             {
                 case SpeedType.MPH:
@@ -364,9 +364,11 @@ namespace UnityStandardAssets.Vehicles.Car
             return false;
         }
 
-        private void OnControllerColliderHit(ControllerColliderHit hit)
+        public void RaceStop()
         {
-            print("dupa");
+            m_Rigidbody.velocity = Vector3.zero;
+            m_Rigidbody.angularVelocity = Vector3.zero;
+            m_Rigidbody.Sleep();
         }
     }
 }
