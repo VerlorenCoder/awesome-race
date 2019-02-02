@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using UnityStandardAssets.Vehicles.Car;
+using UnityEngine.SceneManagement;
 
 public class MoveToStartPosition : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Text timerText;
+    // public Text timerText;
     private CarController Car;
 
     void Start()
@@ -15,23 +15,50 @@ public class MoveToStartPosition : MonoBehaviour
         Car = GetComponent<CarController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Quaternion rotation = new Quaternion(0, 0, 0, 0);
-            Vector3 startPos = new Vector3(-7.39f, 1.95f, 4.6f);
-            GameObject.Find("Car").transform.position = startPos;
-            GameObject.Find("Car").transform.rotation = rotation;
-            timerText.color = Color.white;
-            timerText.text = "00:00.0";
-            GameObject.Find("Car").GetComponent<CarController>().RaceStop();
+            MoveToTrack();
+        }
 
-
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            RestartGame();
         }
     }
 
+    void MoveToTrack()
+    {
+        var carPosition = Car.transform.position;
+        var track = GameObject.FindWithTag("Respawn");
 
-    
+        var children = track.GetComponentsInChildren<Transform>();
+
+        Transform closestTrack = children[0];
+        float closestDistance = Vector3.Distance(children[0].position, carPosition);
+
+        foreach (Transform child in children)
+        {
+            float distance = Vector3.Distance(child.position, carPosition);
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestTrack = child;
+            }
+        }
+        Quaternion rotation = new Quaternion(0, 0, 0, 0);
+        Vector3 startPos = closestTrack.position;
+
+        Car.transform.position = startPos;
+        Car.transform.rotation = rotation;
+
+        Car.GetComponent<CarController>().RaceStop();
+    }
+
+    void RestartGame()
+    {
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }
