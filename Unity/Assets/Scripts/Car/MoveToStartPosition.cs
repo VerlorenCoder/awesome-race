@@ -53,7 +53,8 @@ public class MoveToStartPosition : MonoBehaviour
         Car.transform.position = startPos;
         Car.transform.rotation = rotation;
 
-        Car.GetComponent<CarController>().RaceStop();
+        Car.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
+        Car.GetComponent<Rigidbody>().angularVelocity = new Vector3(0f, 0f, 0f);
     }
 
     void RestartGame()
