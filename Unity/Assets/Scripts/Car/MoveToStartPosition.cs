@@ -27,8 +27,6 @@ public class MoveToStartPosition : MonoBehaviour
             timerText.color = Color.white;
             timerText.text = "00:00.0";
             GameObject.Find("Car").GetComponent<CarController>().RaceStop();
-
-
         }
     }
 
