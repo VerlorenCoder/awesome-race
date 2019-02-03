@@ -95,11 +95,10 @@ namespace UnityStandardAssets.Vehicles.Car
             {
                 duckHitSource.Play();
             }
+
             m_carCrash.Play();
-           
         }
    
-
         private void StopSound()
         {
             //Destroy all audio sources on this object:
