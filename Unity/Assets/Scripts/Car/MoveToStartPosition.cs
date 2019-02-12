@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
+using UnityStandardAssets.Vehicles.Car;
 
 public class MoveToStartPosition : MonoBehaviour
 {
     // Start is called before the first frame update
-   public Text timerText;
+    public Text timerText;
+    private CarController Car;
+
     void Start()
     {
-
-        
+        Car = GetComponent<CarController>();
     }
 
     // Update is called once per frame
@@ -19,18 +21,7 @@ public class MoveToStartPosition : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Quaternion rotation = new Quaternion(0, 0, 0, 0);
-            Vector3 startPos = new Vector3(-7.39f, 3.04f, 4.6f);
-            if (GameObject.Find("Car").transform.position.z >  20)
-            {
-                GameObject.Find("Car").transform.position = startPos;
-                GameObject.Find("Car").transform.rotation = rotation;
-                timerText.color = Color.white;
-                timerText.text = "00:00.0";
-                GameObject.Find("Car").SendMessage("TimeStop");
-            }
-          
-          
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

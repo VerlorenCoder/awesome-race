@@ -13,11 +13,13 @@ public class MeshDeformer : MonoBehaviour {
     public float deformationSpeed = 25.0f;
 
     public void Crash() {
+        Debug.Log("1S");
         float speed = (int)Mathf.Floor(car.CurrentSpeed * 1.3f);
         if (speed >= deformationSpeed)
         {
             AddDeformingForce();
         }
+        Debug.Log("1K");
     }
 
     void Start() {

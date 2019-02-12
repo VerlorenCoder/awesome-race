@@ -88,18 +88,26 @@ namespace UnityStandardAssets.Vehicles.Car
 
         void OnCollisionEnter(Collision collision)
         {
+            foreach(ContactPoint contact in collision.contacts)
+            {
+                Debug.Log(contact.thisCollider.name);
+                if(contact.thisCollider.name == "CarBack")
+                {
+                    FindObjectOfType<MeshDeformerBack>().Crash();
+                } else if (contact.thisCollider.name == "CarFront")
+                {
+                    FindObjectOfType<MeshDeformer>().Crash();
+                }
+            }
 
-            FindObjectOfType<MeshDeformer>().Crash();
-    
             if (collision.gameObject.name.Equals("duck"))
             {
                 duckHitSource.Play();
             }
+
             m_carCrash.Play();
-           
         }
    
-
         private void StopSound()
         {
             //Destroy all audio sources on this object:
